@@ -23,27 +23,31 @@
         <div class="contador-dias" id="contador-dias"></div>
 
         <!-- Calendário para adicionar memórias -->
-        <div class="calendario">
-            <h2>Adicione uma Memória Especial</h2>
-            <input type="date" id="dataMemoria">
-            <textarea id="descricaoMemoria" rows="4" placeholder="Escreva aqui sua lembrança romântica..."></textarea>
-            <button onclick="adicionarMemoria()">Adicionar Memória 💖</button>
-        </div>
+<!-- Calendário para adicionar memórias -->
+<div class="calendario">
+    <h2>Adicione uma Memória Especial</h2>
+    <input type="date" id="dataMemoria">
+    <textarea id="descricaoMemoria" rows="4" placeholder="Escreva aqui sua lembrança romântica..."></textarea>
+    <input type="file" id="imagemMemoria" accept="image/*" multiple> <!-- Campo para selecionar múltiplas imagens -->
+    <div id="previewsImagens"></div> <!-- Aqui serão mostradas as imagens selecionadas -->
+    <button onclick="adicionarMemoria()">Adicionar Memória 💖</button>
+</div>
+
+
+<div class="memorias" id="memorias"></div>
+
 
         <!-- Lista de memórias -->
         <div class="memorias" id="memorias"></div>
 
-<!-- Modal para exibir detalhes da memória -->
-<!-- Modal para exibir detalhes da memória -->
-<div id="modalMemoria" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="fecharModalMemoria()">❌</span>
-        <h2 id="tituloMemoria"></h2>
-        <div id="descricaoMemoriaModal"></div>
-    </div>
-</div>
-
-
+        <!-- Modal para exibir detalhes da memória -->
+        <div id="modalMemoria" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="fecharModalMemoria()">❌</span>
+                <h2 id="tituloMemoria"></h2>
+                <div id="descricaoMemoriaModal"></div>
+            </div>
+        </div>
 
         <!-- Galeria de Fotos -->
         <div class="galeria">
@@ -111,25 +115,8 @@
             <img src="img12.jpg" alt="Foto Ampliada 12">
         </div>
     </div>
- <div id="linhaDoTempo" class="linha-do-tempo">
-    <div class="memoria">
-        <strong>📅 2024-07-19</strong> - Nosso primeiro beijo 💋
-    </div>
-    <div class="memoria">
-        <strong>📅 2024-08-16</strong> - Um mês de namoro ❤️
-    </div>
-    <div class="memoria">
-        <strong>📅 2024-08-23</strong> - Nossa Aliança 💍
-    </div>
-    <!-- Mais memórias aqui -->
-</div>
-
-<button id="abrirLinhaDoTempo">Ver Linha do Tempo</button>
-
-
 
 
     <script src="Script/clicker.js"></script>
-  
 </body>
 </html>
