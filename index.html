@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diário de Memórias - Igor & Giovana</title>
+    <link rel="stylesheet" href="./css/clicker.css">
+</head>
+<body>
+    <!-- Tela de introdução -->
+    <div id="tela-introducao" class="intro">
+        <div class="coracao">
+            💖
+        </div>
+        <h2>Bem-vindo ao nosso Diário de Memórias!</h2>
+    </div>
+
+    <div class="container">
+        <div class="hearts">💖💖💖</div>
+        <h1>Nosso Diário de Memórias - Igor & Giovana</h1>
+
+        <!-- Contador de dias -->
+        <div class="contador-dias" id="contador-dias"></div>
+
+        <!-- Calendário para adicionar memórias -->
+        <div class="calendario">
+            <h2>Adicione uma Memória Especial</h2>
+            <input type="date" id="dataMemoria">
+            <textarea id="descricaoMemoria" rows="4" placeholder="Escreva aqui sua lembrança romântica..."></textarea>
+            <button onclick="adicionarMemoria()">Adicionar Memória 💖</button>
+        </div>
+
+        <!-- Lista de memórias -->
+        <div class="memorias" id="memorias"></div>
+
+<!-- Modal para exibir detalhes da memória -->
+<!-- Modal para exibir detalhes da memória -->
+<div id="modalMemoria" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="fecharModalMemoria()">❌</span>
+        <h2 id="tituloMemoria"></h2>
+        <div id="descricaoMemoriaModal"></div>
+    </div>
+</div>
+
+
+
+        <!-- Galeria de Fotos -->
+        <div class="galeria">
+            <a href="#img1"><img src="img1.jpg" alt="Foto 1"></a>
+            <a href="#img2"><img src="img2.jpg" alt="Foto 2"></a>
+            <a href="#img3"><img src="img3.jpg" alt="Foto 3"></a>
+            <a href="#img4"><img src="img4.jpg" alt="Foto 4"></a>
+            <a href="#img5"><img src="img5.jpg" alt="Foto 5"></a>
+            <a href="#img6"><img src="img6.jpg" alt="Foto 6"></a>
+            <a href="#img7"><img src="img7.jpg" alt="Foto 7"></a>
+            <a href="#img8"><img src="img8.jpg" alt="Foto 8"></a>
+            <a href="#img9"><img src="img9.jpg" alt="Foto 9"></a>
+            <a href="#img10"><img src="img10.jpg" alt="Foto 10"></a>
+            <a href="#img11"><img src="img11.jpg" alt="Foto 11"></a>
+            <a href="#img12"><img src="img12.jpg" alt="Foto 12"></a>
+        </div>
+
+        <!-- Modals para imagens em tela cheia -->
+        <div id="img1" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img1.jpg" alt="Foto Ampliada 1">
+        </div>
+        <div id="img2" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img2.jpg" alt="Foto Ampliada 2">
+        </div>
+        <div id="img3" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img3.jpg" alt="Foto Ampliada 3">
+        </div>
+        <div id="img4" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img4.jpg" alt="Foto Ampliada 4">
+        </div>
+        <div id="img5" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img5.jpg" alt="Foto Ampliada 5">
+        </div>
+        <div id="img6" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img6.jpg" alt="Foto Ampliada 6">
+        </div>
+        <div id="img7" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img7.jpg" alt="Foto Ampliada 7">
+        </div>
+        <div id="img8" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img8.jpg" alt="Foto Ampliada 8">
+        </div>
+        <div id="img9" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img9.jpg" alt="Foto Ampliada 9">
+        </div>
+        <div id="img10" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img10.jpg" alt="Foto Ampliada 10">
+        </div>
+        <div id="img11" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img11.jpg" alt="Foto Ampliada 11">
+        </div>
+        <div id="img12" class="modal">
+            <a href="#" class="close-btn">X</a>
+            <img src="img12.jpg" alt="Foto Ampliada 12">
+        </div>
+    </div>
+ <div id="linhaDoTempo" class="linha-do-tempo">
+    <div class="memoria">
+        <strong>📅 2024-07-19</strong> - Nosso primeiro beijo 💋
+    </div>
+    <div class="memoria">
+        <strong>📅 2024-08-16</strong> - Um mês de namoro ❤️
+    </div>
+    <div class="memoria">
+        <strong>📅 2024-08-23</strong> - Nossa Aliança 💍
+    </div>
+    <!-- Mais memórias aqui -->
+</div>
+
+<button id="abrirLinhaDoTempo">Ver Linha do Tempo</button>
+
+
+
+
+    <script src="./script/clicker.js"></script>
+  
+</body>
+</html>
